@@ -25,33 +25,36 @@ main {
     margin-bottom: 20px;
     padding: 20px;
     box-sizing: border-box;
+    position: relative; /* To position the section title */
 }
 
 h2 {
     font-size: 1.25em;
+    margin-top: 0; /* Remove default margin */
 }
 
-
-
-* {
-  box-sizing: border-box;
-}
-h1 {
-  margin-bottom: 15px;
-}
-
-p {
-  border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
-  padding: 20px;
+/* Section title styles */
+.box h2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #A52A2A; /* Unique color for section title */
+    color: white; /* Text color for section title */
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 1em; /* Adjust size as needed */
+    border: 1px solid black;
 }
 
+/* Media queries for responsiveness */
+@media screen and (max-width: 991px) {
+    .box {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        width: 100%;
+    }
+}
