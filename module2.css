@@ -54,28 +54,4 @@ p {
   width: 100%;
   padding: 20px;
 }
-/*********Desktop*********/
-@media only screen and (min-width: 992px) {
-  .section{
-    width:33.33%;
-    float: left;  }
-}
-/********** Tablet **********/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .section{
-    width: 50%;
-    float:left;
-  }
-  .section: nth-child(3){
-    clear: both;
-    width:100%;
-  }
-}
 
-/********** Mobile  **********/
-@media only screen and (max-width: 767px) {
-  .section{
-    width: 100%;
-    float: none;
-  }  
-}
